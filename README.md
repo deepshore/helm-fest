@@ -149,7 +149,7 @@ helm package charts/bitnami/postgresql
 Install chart:
 
 ```bash
-helm -n postgresql install postgresql 
+helm -n postgresql install postgresql postgresql-10.2.0.tgz -f values/values-postgresql.yaml
 ```
 
 Check if database is running:
@@ -165,7 +165,7 @@ For this tutorial the following chart versions were used:
 - [https://github.com/kubernetes/dashboard/tree/master/aio/deploy/helm-chart/kubernetes-dashboard](https://github.com/kubernetes/dashboard/tree/master/aio/deploy/helm-chart/kubernetes-dashboard): 3.0.2
 - [https://github.com/bitnami/charts/tree/master/bitnami/postgresql](https://github.com/bitnami/charts/tree/master/bitnami/postgresql): 10.2.0
 
-## Changes to the default values
+## Configuration of values
 
 Changes were made to the following values.
 
